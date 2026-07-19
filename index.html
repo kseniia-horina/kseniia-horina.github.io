@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kseniia Horina — QA Engineer</title>
+<meta name="description" content="QA Engineer. 3+ years, 12 products, 6 industries. Healthcare, accessibility, telecom, travel, sports and education. Web, iOS, Android, API and device integrations.">
+<meta name="author" content="Kseniia Horina">
+<meta property="og:title" content="Kseniia Horina — QA Engineer">
+<meta property="og:description" content="Three years across six industries, most of it as the only QA in the room. Healthcare, accessibility and hardware integrations.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F2F1ED;
+  --paper-tint:#EAE9F2;
+  --card:#FBFBF9;
+  --ink:#16161C;
+  --ink-soft:#5B5F6B;
+  --line:#D5D3CE;
+
+  --health:#0E7C6B;
+  --access:#6B3FC4;
+  --telecom:#1A5DBF;
+  --sports:#B06A16;
+  --travel:#C42F63;
+  --edu:#8A2E8F;
+  --legal:#4A5568;
+
+  --display:"Space Grotesk",system-ui,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --gut:28px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:clamp(16px,1.15vw,17.5px);line-height:1.68;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 var(--gut)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--access);outline-offset:3px;border-radius:2px}
+
+.eyebrow{font-family:var(--mono);font-size:clamp(10px,1vw,11px);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);margin:0}
+h2{font-family:var(--display);font-weight:500;font-size:clamp(23px,3.6vw,34px);letter-spacing:-.02em;margin:12px 0 22px;line-height:1.15;max-width:20ch}
+h3{font-family:var(--display);font-weight:500;font-size:clamp(17px,1.7vw,19.5px);letter-spacing:-.01em;margin:0 0 8px;line-height:1.3}
+section{padding:clamp(52px,7vw,80px) 0;border-top:1px solid var(--line)}
+.lede{max-width:60ch;color:var(--ink-soft)}
+p{max-width:62ch}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(242,241,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navbar{max-width:1060px;margin:0 auto;padding:0 var(--gut);display:flex;align-items:center;gap:clamp(14px,2.2vw,24px);height:58px}
+.navbar .who{font-family:var(--display);font-weight:700;font-size:14.5px;letter-spacing:-.02em;white-space:nowrap;margin-right:auto;padding-right:10px}
+.navlinks{display:flex;align-items:center;gap:clamp(14px,2.2vw,24px);overflow-x:auto;scrollbar-width:none}
+.navlinks::-webkit-scrollbar{display:none}
+.navbar a{font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;text-decoration:none;color:var(--ink-soft);white-space:nowrap;padding:4px 0;border-bottom:2px solid transparent;transition:.2s}
+.navbar a:hover{color:var(--ink)}
+.navbar a.active{color:var(--health);border-bottom-color:var(--health)}
+.navbar a.hire{
+  border:1px solid var(--health);border-radius:20px;padding:6px 14px;color:var(--health);
+  background:color-mix(in srgb,var(--health) 8%,transparent);flex:none;
+}
+.navbar a.hire:hover{background:var(--health);color:#fff}
+.navbar a.hire.active{border-bottom-color:var(--health)}
+
+/* ---------- header ---------- */
+header{padding:clamp(46px,7vw,72px) 0 clamp(30px,4vw,42px);position:relative;overflow:hidden}
+header::before{
+  content:"";position:absolute;inset:-40% -20% auto -20%;height:120%;z-index:0;
+  background:
+    radial-gradient(38% 55% at 12% 30%, rgba(14,124,107,.20), transparent 70%),
+    radial-gradient(34% 50% at 62% 12%, rgba(107,63,196,.18), transparent 70%),
+    radial-gradient(40% 55% at 92% 55%, rgba(196,47,99,.16), transparent 70%);
+  filter:blur(4px);
+}
+header .wrap{position:relative;z-index:1}
+.name{font-family:var(--display);font-weight:700;font-size:clamp(40px,9vw,86px);line-height:.94;letter-spacing:-.045em;margin:0}
+.role{font-family:var(--mono);font-size:clamp(11px,1.4vw,13px);letter-spacing:.22em;text-transform:uppercase;margin:18px 0 0;color:var(--ink-soft)}
+.pitch{font-size:clamp(19px,2.6vw,25px);max-width:34ch;margin:20px 0 0;line-height:1.38}
+.pitch b{font-weight:600;background:linear-gradient(transparent 62%, rgba(14,124,107,.28) 0)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:26px;font-family:var(--mono);font-size:clamp(11px,1.2vw,12px);color:var(--ink-soft)}
+.meta span{display:inline-flex;align-items:center;gap:7px}
+.meta span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--health);flex:none}
+
+/* quick read for recruiters */
+.glance{
+  margin-top:clamp(30px,4vw,42px);background:var(--card);border:1px solid var(--line);
+  border-radius:6px;padding:clamp(20px,2.6vw,26px) clamp(20px,2.8vw,28px);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:clamp(18px,2.4vw,28px);
+}
+.glance .g{border-left:3px solid var(--c);padding-left:14px}
+.glance .gt{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin:0 0 6px}
+.glance .gd{margin:0;font-size:.96em;line-height:1.55}
+.glance .gd b{font-weight:600}
+
+/* ---------- filters ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.filters button{
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  background:none;border:1px solid var(--line);color:var(--ink-soft);
+  padding:8px 14px;border-radius:20px;cursor:pointer;transition:.18s;
+}
+.filters button:hover{border-color:var(--c,var(--ink-soft));color:var(--c,var(--ink))}
+.filters button[aria-pressed="true"]{background:var(--c,var(--ink));border-color:var(--c,var(--ink));color:#fff}
+.count{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin:0 0 18px}
+
+.matrix-note{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:20px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft)}
+.key{display:inline-flex;align-items:center;gap:7px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--ink-soft);display:inline-block;flex:none}
+.dot.team{background:none;border:2px solid var(--ink-soft)}
+
+/* ---------- matrix ---------- */
+table.matrix{border-collapse:collapse;width:100%;font-family:var(--mono);font-size:clamp(11.5px,1.15vw,12.5px)}
+table.matrix th{font-weight:500;text-align:left;padding:0 0 12px;vertical-align:bottom;color:var(--ink-soft);letter-spacing:.08em;text-transform:uppercase;font-size:10.5px}
+table.matrix th.plat{text-align:center;width:clamp(50px,6.5vw,70px)}
+table.matrix td{padding:14px 0;border-top:1px solid var(--line);vertical-align:middle}
+table.matrix td.cell{text-align:center}
+table.matrix td.prod{padding-left:12px;border-left:3px solid var(--c);position:relative}
+table.matrix tbody tr:hover td{background:color-mix(in srgb, var(--c) 7%, transparent)}
+tr.is-hidden{display:none}
+.prod .nm{font-family:var(--display);font-size:clamp(14px,1.4vw,15.5px);font-weight:500;letter-spacing:-.01em}
+.client{display:block;color:var(--ink-soft);font-family:var(--mono);font-size:clamp(10.5px,1.05vw,11.5px);margin-top:4px;line-height:1.5}
+.pill{
+  display:inline-block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+  padding:2px 7px;border-radius:10px;margin-left:7px;vertical-align:middle;
+  background:color-mix(in srgb, var(--c) 16%, transparent);color:var(--c);
+}
+.mark{display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--c);transform:scale(0);animation:pop .32s cubic-bezier(.2,.9,.3,1.4) forwards}
+.mark.team{background:none;border:2px solid var(--c)}
+@keyframes pop{to{transform:scale(1)}}
+
+.tally{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(14px,2vw,24px);margin-top:40px;padding-top:28px;border-top:2px solid var(--ink)}
+.tally .n{font-family:var(--display);font-size:clamp(27px,4vw,34px);font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--c)}
+.tally .l{font-family:var(--mono);font-size:clamp(10px,1.05vw,11px);color:var(--ink-soft);margin-top:8px;line-height:1.5}
+
+/* ---------- ownership ---------- */
+#ownership{background:var(--paper-tint)}
+.owned{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(22px,3vw,40px)}
+.owned>div{border-top:3px solid var(--c);padding-top:16px}
+.owned h3{color:var(--c)}
+.owned p{margin:0;color:var(--ink-soft)}
+.owned b{color:var(--ink);font-weight:600}
+
+/* ---------- domains ---------- */
+.domain{display:grid;grid-template-columns:minmax(150px,215px) 1fr;gap:clamp(14px,2.4vw,28px);padding:28px 0;border-top:1px solid var(--line)}
+.domain:first-of-type{border-top:none;padding-top:0}
+.domain h3{margin:0;color:var(--c)}
+.domain .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px;display:inline-block;padding:4px 10px;border-radius:10px;background:color-mix(in srgb, var(--c) 14%, transparent);color:var(--c)}
+.domain ul{margin:0;padding:0;list-style:none;max-width:66ch}
+.domain li{padding:7px 0 7px 17px;position:relative}
+.domain li::before{content:"";position:absolute;left:0;top:16px;width:6px;height:6px;border-radius:50%;background:var(--c)}
+.domain li span{color:var(--ink-soft);font-size:.94em}
+
+/* ---------- toolkit ---------- */
+.kit{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(18px,2.6vw,26px)}
+.kit>div{background:var(--card);border-radius:5px;padding:22px 24px;border-bottom:3px solid var(--c);border-left:1px solid var(--line);border-top:1px solid var(--line);border-right:1px solid var(--line)}
+.kit h3{font-size:12px;font-family:var(--mono);font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--c);margin-bottom:12px}
+.kit ul{margin:0;padding:0;list-style:none;font-size:.95em}
+.kit li{padding:4px 0 4px 15px;position:relative;line-height:1.5}
+.kit li::before{content:"·";position:absolute;left:2px;color:var(--c);font-weight:700}
+
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(24px,4vw,48px)}
+.two ul{margin:0;padding-left:19px;max-width:62ch}
+.two li{margin-bottom:12px;color:var(--ink-soft)}
+.two li b{color:var(--ink);font-weight:600}
+#naqa{background:var(--paper-tint)}
+
+/* ---------- education / certs ---------- */
+.stack{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3.5vw,44px)}
+.entry{padding:14px 0;border-top:1px solid var(--line)}
+.entry:first-of-type{border-top:none;padding-top:0}
+.entry .t{font-family:var(--display);font-weight:500;font-size:15.5px;letter-spacing:-.01em;margin:0}
+.entry .s{margin:4px 0 0;color:var(--ink-soft);font-size:.94em}
+.entry .d{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 0;display:block}
+.entry a{color:var(--telecom)}
+
+/* ---------- contact ---------- */
+footer{padding:clamp(52px,7vw,76px) 0 clamp(60px,9vw,92px);border-top:2px solid var(--ink)}
+.cta{font-family:var(--display);font-size:clamp(21px,3.2vw,30px);font-weight:500;letter-spacing:-.02em;margin:14px 0 30px;max-width:34ch;line-height:1.28}
+.contacts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.contacts a{
+  display:flex;flex-direction:column;gap:5px;text-decoration:none;background:var(--card);
+  border:1px solid var(--line);border-left:3px solid var(--c);border-radius:5px;
+  padding:16px 18px;transition:.18s;
+}
+.contacts a:hover{border-color:var(--c);border-left-color:var(--c);transform:translateY(-2px)}
+.contacts .k{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.contacts .v{font-family:var(--display);font-size:15px;font-weight:500;letter-spacing:-.01em;word-break:break-word}
+.avail{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin-top:26px;display:flex;flex-wrap:wrap;gap:6px 20px}
+.fine{font-family:var(--mono);font-size:10.5px;color:var(--ink-soft);margin-top:30px}
+
+@media(max-width:900px){
+  .two{grid-template-columns:1fr}
+  .tally{grid-template-columns:repeat(3,1fr);row-gap:26px}
+  .contacts{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:860px){
+  :root{--gut:22px}
+  .domain{grid-template-columns:1fr;gap:12px}
+  .domain .tag{margin-top:4px}
+}
+@media(max-width:640px){
+  :root{--gut:18px}
+  html{scroll-padding-top:60px}
+  body{line-height:1.65}
+  .navbar{height:54px}
+  .navbar .who{font-size:13px}
+  h2{margin-bottom:18px}
+  section{padding:44px 0}
+  table.matrix thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.matrix,table.matrix tbody,table.matrix tr,table.matrix td{display:block;width:100%}
+  table.matrix tr{border-top:1px solid var(--line);padding:18px 0}
+  table.matrix tr:hover td{background:none}
+  table.matrix td{border:none;padding:0}
+  table.matrix td.prod{border-left:3px solid var(--c);padding-left:12px}
+  table.matrix td.cell{display:none}
+  table.matrix td.cell:has(.mark){
+    display:inline-flex;align-items:center;gap:6px;margin:8px 6px 0 0;padding:6px 11px;
+    border:1px solid color-mix(in srgb, var(--c) 35%, transparent);border-radius:14px;
+    font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--c);
+  }
+  table.matrix td.cell:has(.mark)::after{content:attr(data-plat)}
+  .mark{width:9px;height:9px}
+  .tally{grid-template-columns:1fr 1fr;gap:20px}
+  .tally>div:last-child{grid-column:1 / -1}
+  .kit{grid-template-columns:1fr}
+  .owned{grid-template-columns:1fr}
+  .contacts{grid-template-columns:1fr}
+  .glance{padding:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .mark{animation:none;transform:scale(1)}
+  *{transition-duration:.01ms!important}
+}
+@media print{
+  nav,.filters,.count{display:none}
+  body{background:#fff;font-size:11pt}
+  header::before{display:none}
+  section{page-break-inside:avoid;border-top:1px solid #ccc}
+  .contacts a{border:1px solid #ccc}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navbar">
+    <span class="who">Kseniia Horina</span>
+    <div class="navlinks">
+      <a href="#coverage">Coverage</a>
+      <a href="#ownership">How I work</a>
+      <a href="#domains">Domains</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#naqa">NAQA</a>
+      <a href="#background">Background</a>
+      <a class="hire" href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <h1 class="name">Kseniia<br>Horina</h1>
+    <p class="role">QA Engineer</p>
+    <p class="pitch">Three years of shipping software across six industries — <b>most of it owning testing end to end</b>.</p>
+    <div class="meta">
+      <span>Wrocław, Poland</span>
+      <span>English B2 · Polish B2 · Ukrainian &amp; Russian native</span>
+      <span>Open to remote, hybrid or onsite</span>
+    </div>
+
+    <div class="glance">
+      <div class="g" style="--c:var(--health)">
+        <p class="gt">Experience in brief</p>
+        <p class="gd"><b>12 products</b> tested at i2a Solutions since February 2023, <b>9 of them as sole QA</b>, up to <b>5 in parallel</b> at peak.</p>
+      </div>
+      <div class="g" style="--c:var(--access)">
+        <p class="gt">Where I go deep</p>
+        <p class="gd">Healthcare and medical apps, accessibility, and anything with <b>hardware attached</b> — wearables, headphones, routers, AR beacons.</p>
+      </div>
+      <div class="g" style="--c:var(--travel)">
+        <p class="gt">How I work</p>
+        <p class="gd">I use <b>AI as a working tool</b>, not a buzzword: it removed roughly half my regression and smoke time, and that time went to edge cases.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="coverage">
+  <div class="wrap">
+    <p class="eyebrow">Coverage matrix</p>
+    <h2>What I've tested, and where it ran</h2>
+    <p class="lede" style="margin-bottom:24px">Twelve products at i2a Solutions since February 2023. Colour marks the industry; a filled dot means I was the only QA on it. Filter by what you're hiring for.</p>
+
+    <div class="filters" role="group" aria-label="Filter products">
+      <button data-filter="all" aria-pressed="true">All 12</button>
+      <button data-filter="health" style="--c:var(--health)" aria-pressed="false">Healthcare</button>
+      <button data-filter="access" style="--c:var(--access)" aria-pressed="false">Accessibility</button>
+      <button data-filter="telecom" style="--c:var(--telecom)" aria-pressed="false">Telecom</button>
+      <button data-filter="other" style="--c:var(--travel)" aria-pressed="false">Travel · Sports · Legal · Education</button>
+      <button data-filter="devices" aria-pressed="false">Device &amp; IoT</button>
+      <button data-filter="sole" aria-pressed="false">Sole QA</button>
+    </div>
+    <p class="count" id="count" aria-live="polite">Showing all 12 products</p>
+
+    <div class="matrix-note">
+      <span class="key"><span class="dot"></span> Sole QA — owned the process end to end</span>
+      <span class="key"><span class="dot team"></span> Covered alongside a wider QA team</span>
+    </div>
+
+    <table class="matrix">
+      <thead>
+        <tr>
+          <th style="min-width:210px">Product</th>
+          <th class="plat">Web</th><th class="plat">iOS</th><th class="plat">Android</th><th class="plat">API</th><th class="plat">Devices</th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+
+        <tr data-domain="health" style="--c:var(--health)">
+          <td class="prod"><span class="nm">Sensei Cloud</span><span class="pill">ongoing</span><span class="client">Carestream Dental · dental practice platform · Jenkins, Azure DevOps</span></td>
+          <td class="cell" data-plat="Web"><i class="mark team" style="animation-delay:.04s"></i></td>
+          <td class="cell" data-plat="iOS"></td><td class="cell" data-plat="Android"></td>
+          <td class="cell" data-plat="API"><i class="mark team" style="animation-delay:.06s"></i></td>
+          <td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="health" data-devices="1" data-sole="1" style="--c:var(--health)">
+          <td class="prod"><span class="nm">Athelo Health</span><span class="client">oncology patient support · TestFlight, Firebase, inSyncHub</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.08s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.10s"></i></td>
+          <td class="cell" data-plat="API"><i class="mark" style="animation-delay:.12s"></i></td>
+          <td class="cell" data-plat="Devices"><i class="mark" style="animation-delay:.14s"></i></td>
+        </tr>
+
+        <tr data-domain="access" data-devices="1" data-sole="1" style="--c:var(--access)">
+          <td class="prod"><span class="nm">Nadi</span><span class="pill">accessibility</span><span class="client">assistive audio app for users with hearing loss</span></td>
+          <td class="cell" data-plat="Web"><i class="mark" style="animation-delay:.16s"></i></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.18s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.20s"></i></td>
+          <td class="cell" data-plat="API"></td>
+          <td class="cell" data-plat="Devices"><i class="mark" style="animation-delay:.22s"></i></td>
+        </tr>
+
+        <tr data-domain="health" data-sole="1" style="--c:var(--health)">
+          <td class="prod"><span class="nm">QuitBuddy</span><span class="client">Meherry Medical School · smoking cessation</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.24s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.26s"></i></td>
+          <td class="cell" data-plat="API"><i class="mark" style="animation-delay:.28s"></i></td>
+          <td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="health" data-sole="1" style="--c:var(--health)">
+          <td class="prod"><span class="nm">Cardea Survey</span><span class="client">XCelable · patient-reported outcomes, activity &amp; breathing practice</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.30s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.32s"></i></td>
+          <td class="cell" data-plat="API"><i class="mark" style="animation-delay:.34s"></i></td>
+          <td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="health" data-sole="1" style="--c:var(--health)">
+          <td class="prod"><span class="nm">Kenya Family Planning</span><span class="client">cross-platform public health guidance app</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.36s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.38s"></i></td>
+          <td class="cell" data-plat="API"></td><td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="telecom" data-devices="1" style="--c:var(--telecom)">
+          <td class="prod"><span class="nm">TelCloud</span><span class="client">Tantamount Software · gov &amp; private telecom, incl. TelcoBill, GovTelco, Agent Portal · Jira, Confluence</span></td>
+          <td class="cell" data-plat="Web"><i class="mark team" style="animation-delay:.40s"></i></td>
+          <td class="cell" data-plat="iOS"></td><td class="cell" data-plat="Android"></td>
+          <td class="cell" data-plat="API"><i class="mark team" style="animation-delay:.42s"></i></td>
+          <td class="cell" data-plat="Devices"><i class="mark team" style="animation-delay:.44s"></i></td>
+        </tr>
+
+        <tr data-domain="other" data-devices="1" style="--c:var(--sports)">
+          <td class="prod"><span class="nm">Venuetize PSN</span><span class="client">Everi Holdings · sports fan engagement · Jira</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark team" style="animation-delay:.46s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark team" style="animation-delay:.48s"></i></td>
+          <td class="cell" data-plat="API"></td>
+          <td class="cell" data-plat="Devices"><i class="mark team" style="animation-delay:.50s"></i></td>
+        </tr>
+
+        <tr data-domain="other" data-devices="1" data-sole="1" style="--c:var(--edu)">
+          <td class="prod"><span class="nm">Guru Experience apps</span><span class="client">museum &amp; virtual-museum engagement, beacon-triggered AR</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.52s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.54s"></i></td>
+          <td class="cell" data-plat="API"></td>
+          <td class="cell" data-plat="Devices"><i class="mark" style="animation-delay:.56s"></i></td>
+        </tr>
+
+        <tr data-domain="other" data-sole="1" style="--c:var(--travel)">
+          <td class="prod"><span class="nm">TripBucket</span><span class="pill">ongoing</span><span class="client">travel platform + white-label sub-apps</span></td>
+          <td class="cell" data-plat="Web"><i class="mark" style="animation-delay:.58s"></i></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.60s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.62s"></i></td>
+          <td class="cell" data-plat="API"><i class="mark" style="animation-delay:.64s"></i></td>
+          <td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="other" data-sole="1" style="--c:var(--travel)">
+          <td class="prod"><span class="nm">El Paso</span><span class="client">El Paso Inc · white-label city travel app</span></td>
+          <td class="cell" data-plat="Web"></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.66s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.68s"></i></td>
+          <td class="cell" data-plat="API"><i class="mark" style="animation-delay:.70s"></i></td>
+          <td class="cell" data-plat="Devices"></td>
+        </tr>
+
+        <tr data-domain="other" data-sole="1" style="--c:var(--legal)">
+          <td class="prod"><span class="nm">Beyond Law</span><span class="client">legal services platform</span></td>
+          <td class="cell" data-plat="Web"><i class="mark" style="animation-delay:.72s"></i></td>
+          <td class="cell" data-plat="iOS"><i class="mark" style="animation-delay:.74s"></i></td>
+          <td class="cell" data-plat="Android"><i class="mark" style="animation-delay:.76s"></i></td>
+          <td class="cell" data-plat="API"></td><td class="cell" data-plat="Devices"></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <div class="tally">
+      <div style="--c:var(--health)"><div class="n">12</div><div class="l">products, plus sub-products and white-label apps</div></div>
+      <div style="--c:var(--telecom)"><div class="n">6</div><div class="l">industries</div></div>
+      <div style="--c:var(--access)"><div class="n">9 / 12</div><div class="l">tested as sole QA</div></div>
+      <div style="--c:var(--sports)"><div class="n">5</div><div class="l">products validated in parallel at peak</div></div>
+      <div style="--c:var(--travel)"><div class="n">~50%</div><div class="l">regression &amp; smoke time removed with AI-assisted testing</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="ownership">
+  <div class="wrap">
+    <p class="eyebrow">How I work</p>
+    <h2>Quality before the first line of code, not after the last</h2>
+    <div class="owned">
+      <div style="--c:var(--health)">
+        <h3>Ahead of development</h3>
+        <p>I review user stories with product owners before a sprint starts — checking that requirements are complete, testable and actually match what the client asked for. Most of the defects I prevent never get written down, because they never get built.</p>
+      </div>
+      <div style="--c:var(--telecom)">
+        <h3>During development</h3>
+        <p>Test strategy, planning and <b>hundreds of test plans and test cases</b>. I sit inside the code-review and PR-approval flow rather than waiting at the end of it, and I take critical findings back to <b>root cause</b> instead of filing the symptom.</p>
+      </div>
+      <div style="--c:var(--access)">
+        <h3>At release</h3>
+        <p>Release validation and sign-off, running <b>up to five products at once</b> by staggering cycles and prioritising by risk. Routine regression and smoke go to <b>Claude, ChatGPT and mabl</b>; the time that frees up goes to edge cases and new features.</p>
+      </div>
+      <div style="--c:var(--travel)">
+        <h3>Across the team</h3>
+        <p>I onboarded and mentored <b>two QA engineers</b> (web and mobile), ran product demos for stakeholders, wrote documentation standards later projects reused, and handed <b>TelCloud over to a new tester</b> when I moved on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="domains">
+  <div class="wrap">
+    <p class="eyebrow">Where the depth is</p>
+    <h2>Six industries, three that matter most</h2>
+
+    <div class="domain" style="--c:var(--health)">
+      <div><h3>Healthcare &amp; dental</h3><div class="tag">Deepest domain · 5 products</div></div>
+      <ul>
+        <li>Sensei Cloud <span>— Carestream Dental's practice management platform. Functional and API testing, AI-assisted tooling, demo facilitation, onboarding.</span></li>
+        <li>Athelo Health <span>— symptom, activity and support tracking for cancer patients, with wearable device integrations.</span></li>
+        <li>Cardea Survey (XCelable) <span>— patient-reported outcomes, physical activity and guided breathing practice.</span></li>
+        <li>QuitBuddy, Kenya Family Planning <span>— smoking cessation and public-health guidance for clinical and NGO clients.</span></li>
+      </ul>
+    </div>
+
+    <div class="domain" style="--c:var(--access)">
+      <div><h3>Accessibility</h3><div class="tag">Rare specialism</div></div>
+      <ul>
+        <li>Nadi <span>— assistive audio app for users with hearing loss: captures ambient sound and plays it back amplified through headphones, on iOS, Android and web.</span></li>
+        <li>Testing for users who cannot work around a defect <span>— audio capture and playback fidelity, latency, Bluetooth headphone pairing and drop recovery, behaviour across app states.</span></li>
+      </ul>
+    </div>
+
+    <div class="domain" style="--c:var(--telecom)">
+      <div><h3>Device &amp; IoT integrations</h3><div class="tag">Across 5 products</div></div>
+      <ul>
+        <li>Wearables and audio devices <span>— smartwatch and headphone pairing, background sync, data integrity across connection drops.</span></li>
+        <li>Telecom hardware <span>— router provisioning and connectivity on TelCloud, verified end to end against the platform.</span></li>
+        <li>AR beacons <span>— proximity-triggered augmented reality in museum spaces, across device and OS combinations.</span></li>
+        <li>Emulators, simulators and real devices <span>— compatibility matrices across Android and iOS versions and form factors.</span></li>
+      </ul>
+    </div>
+
+    <div class="domain" style="--c:var(--sports)">
+      <div><h3>Telecom, sports, travel, legal &amp; education</h3><div class="tag">Breadth</div></div>
+      <ul>
+        <li>TelCloud <span>— Tantamount Software, government and private telecom services, incl. TelcoBill, GovTelco and Agent Portal. Handed over to a new tester in June 2026.</span></li>
+        <li>Venuetize PSN <span>— Everi Holdings' fan engagement platform for venues.</span></li>
+        <li>TripBucket and El Paso <span>— travel platform plus dozens of white-label city apps.</span></li>
+        <li>Guru Experience Co. <span>— museum and virtual-museum apps.</span> · Beyond Law <span>— legal services.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="toolkit">
+  <div class="wrap">
+    <p class="eyebrow">Toolkit</p>
+    <h2>What I reach for</h2>
+    <div class="kit">
+      <div style="--c:var(--health)">
+        <h3>Testing</h3>
+        <ul>
+          <li>Test strategy, planning and case design</li>
+          <li>Functional, regression, smoke, sanity</li>
+          <li>Exploratory and edge-case testing</li>
+          <li>Accessibility, UI/UX, compatibility</li>
+          <li>Requirements analysis, traceability matrices</li>
+        </ul>
+      </div>
+      <div style="--c:var(--access)">
+        <h3>AI-assisted QA</h3>
+        <ul>
+          <li>Claude and ChatGPT for case generation and upkeep</li>
+          <li>Triaging repeat scenarios and log analysis</li>
+          <li>Turning saved time into edge-case coverage</li>
+          <li>mabl for repeatable smoke and regression runs</li>
+        </ul>
+      </div>
+      <div style="--c:var(--telecom)">
+        <h3>API &amp; platforms</h3>
+        <ul>
+          <li>Postman, Swagger, Django Admin</li>
+          <li>Browser DevTools, Android Studio</li>
+          <li>Emulators, simulators and real devices</li>
+          <li>Web, iOS, Android, cross-platform</li>
+        </ul>
+      </div>
+      <div style="--c:var(--sports)">
+        <h3>Process &amp; delivery</h3>
+        <ul>
+          <li>Agile/Scrum, full SDLC ownership</li>
+          <li>Defect management and release sign-off</li>
+          <li>Jira, Confluence, Azure DevOps, Jenkins</li>
+          <li>TestFlight, Firebase, inSyncHub, Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="naqa">
+  <div class="wrap">
+    <p class="eyebrow">In parallel · since Nov 2023</p>
+    <h2>Quality assurance outside software</h2>
+    <div class="two">
+      <p class="lede">Higher Education Quality Assurance Expert for the Ukrainian National Agency (NAQA), under the Ministry of Education and Science of Ukraine. Auditing against a published standard, documenting findings that carry consequences, and defending them in writing — the same discipline regulated software QA runs on.</p>
+      <ul>
+        <li>Led <b>4 accreditation evaluations</b> of Computer Science and Computer Engineering programmes against national standards.</li>
+        <li>Uncovered critical non-compliances — curriculum gaps, staffing violations, institutional discrimination — that directly shaped official accreditation decisions.</li>
+        <li>Authored expert commission reports published by <b>NAQA</b>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="background">
+  <div class="wrap">
+    <p class="eyebrow">Education &amp; certifications</p>
+    <h2>Background</h2>
+    <div class="stack">
+      <div>
+        <h3 style="margin-bottom:16px">Education</h3>
+        <div class="entry">
+          <p class="t">BSc, Computer Technology in Medicine and Biology</p>
+          <p class="s">National Aerospace University — 1st Class Honours</p>
+          <span class="d">2021–2025</span>
+        </div>
+        <div class="entry">
+          <p class="t">Erasmus+ exchange, Computer Science</p>
+          <p class="s">West Pomeranian University of Technology, Szczecin</p>
+          <span class="d">2024</span>
+        </div>
+        <div class="entry">
+          <p class="t">NAWA exchange, Biotechnology</p>
+          <p class="s">Częstochowa University of Technology</p>
+          <span class="d">2023</span>
+        </div>
+        <div class="entry">
+          <p class="t">Junior bachelor, Data Processing</p>
+          <p class="s">Zaporizhzhia National University</p>
+          <span class="d">2019–2021</span>
+        </div>
+      </div>
+      <div>
+        <h3 style="margin-bottom:16px">Certifications</h3>
+        <div class="entry">
+          <p class="t">Business Analyst</p>
+          <p class="s">Genius.Space — requirements gathering, stakeholder work and product documentation, the groundwork for reviewing user stories before a sprint starts.</p>
+          <span class="d">Diploma</span>
+        </div>
+        <div class="entry">
+          <p class="t">Creation and Development of IT Products</p>
+          <p class="s">Genesis, with the Ministry of Education and Science of Ukraine and Kyiv School of Economics.</p>
+          <span class="d">Aug 2024</span>
+        </div>
+        <div class="entry">
+          <p class="t">Automation Software Testing</p>
+          <p class="s">GlobalLogic &amp; Prometheus — passed with honours.</p>
+          <span class="d">Jan 2024</span>
+        </div>
+        <div class="entry">
+          <p class="t">The Essential Kotlin Programming Course</p>
+          <p class="s">Udemy — Android fundamentals for reading the code I test.</p>
+          <span class="d">Sep 2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <p class="cta">Six industries so far, and I'm always up for a seventh. If you're hiring QA, let's talk.</p>
+
+    <div class="contacts">
+      <a href="mailto:kseniiahorina@gmail.com" style="--c:var(--health)">
+        <span class="k">Email</span>
+        <span class="v">kseniiahorina@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/kseniia-horina/" target="_blank" rel="noopener" style="--c:var(--telecom)">
+        <span class="k">LinkedIn</span>
+        <span class="v">Kseniia Horina</span>
+      </a>
+      <a href="https://t.me/s_killl_s" target="_blank" rel="noopener" style="--c:var(--access)">
+        <span class="k">Telegram</span>
+        <span class="v">Kseniia Horina</span>
+      </a>
+      <a href="tel:+48732541926" style="--c:var(--travel)">
+        <span class="k">Phone</span>
+        <span class="v">+48 732 541 926</span>
+      </a>
+    </div>
+
+    <div class="avail">
+      <span>Based in Wrocław, Poland</span>
+      <span>Remote, hybrid or onsite</span>
+      <span>English B2 · Polish B2 · Ukrainian &amp; Russian native</span>
+    </div>
+
+    <p class="fine">Last updated July 2026 · Single HTML file, no dependencies beyond web fonts.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#rows tr'));
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.filters button'));
+  var count = document.getElementById('count');
+  var total = rows.length;
+  var labels = {
+    all:'all 12 products', health:'healthcare products', access:'accessibility work',
+    telecom:'telecom products', other:'travel, sports, legal and education products',
+    devices:'products with device or IoT integrations', sole:'products tested as sole QA'
+  };
+
+  function matches(row, f){
+    if(f === 'all') return true;
+    if(f === 'devices') return row.dataset.devices === '1';
+    if(f === 'sole') return row.dataset.sole === '1';
+    return row.dataset.domain === f;
+  }
+
+  function apply(f){
+    var shown = 0;
+    rows.forEach(function(r){
+      var ok = matches(r, f);
+      r.classList.toggle('is-hidden', !ok);
+      if(ok) shown++;
+    });
+    buttons.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.filter === f)); });
+    count.textContent = f === 'all'
+      ? 'Showing all ' + total + ' products'
+      : 'Showing ' + shown + ' of ' + total + ' — ' + labels[f];
+  }
+
+  buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.filter); }); });
+
+  var navAnchors = Array.prototype.slice.call(document.querySelectorAll('a[href^="#"]'));
+  var smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  navAnchors.forEach(function(a){
+    a.addEventListener('click', function(e){
+      var el = document.querySelector(a.getAttribute('href'));
+      if(!el) return;
+      e.preventDefault();
+      el.scrollIntoView({ behavior: smooth ? 'smooth' : 'auto', block: 'start' });
+    });
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('.navbar a:not(.hire)'));
+  var targets = links.map(function(l){ return document.querySelector(l.getAttribute('href')); }).filter(Boolean);
+  if('IntersectionObserver' in window){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        links.forEach(function(l){ l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id); });
+      });
+    }, { rootMargin:'-20% 0px -70% 0px' });
+    targets.forEach(function(t){ obs.observe(t); });
+  }
+})();
+</script>
+
+</body>
+</html>
