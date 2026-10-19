@@ -1,0 +1,7 @@
+subprojects {
+    apply plugin: 'java'
+    repositories { mavenCentral() }
+    tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+    // кирилиця у виводі консолі (Windows за замовчуванням виводить '?')
+    tasks.withType(JavaExec).configureEach { jvmArgs '-Dstdout.encoding=UTF-8', '-Dfile.encoding=UTF-8' }
+}
