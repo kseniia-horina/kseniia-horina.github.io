@@ -86,6 +86,23 @@ for (const { code, path } of LANGS) {
       await expect(page.locator('#term .sum')).toContainText(`${checks} passed, 0 failed`);
     });
 
+    test('offers the CV as a real PDF download', async ({ page, request }) => {
+      const links = page.locator('a[data-cv]');
+      await expect(links).toHaveCount(2); // hero + contact
+      for (const link of await links.all()) {
+        await expect(link).toHaveAttribute('download', '');
+        const href = await link.evaluate(a => new URL(a.href).pathname);
+        expect(href).toBe('/assets/cv/Kseniia_Horina_QAE.pdf');
+        const res = await request.get(href);
+        expect(res.status()).toBe(200);
+        expect(res.headers()['content-type']).toBe('application/pdf');
+        expect((await res.body()).subarray(0, 5).toString()).toBe('%PDF-');
+      }
+      const download = page.waitForEvent('download');
+      await links.first().click();
+      expect((await download).suggestedFilename()).toBe('Kseniia_Horina_QAE.pdf');
+    });
+
     test('does not publish a phone number', async ({ page }) => {
       await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
       const html = await page.content();

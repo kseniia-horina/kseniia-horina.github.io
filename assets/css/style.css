@@ -585,3 +585,8 @@ tr:hover .go-arrow{transform:translateX(3px);color:var(--c)}
 @media (max-width:640px){
   .navlinks{top:58px}
 }
+
+/* ---------- CV download ---------- */
+.btn[download]:hover svg{transform:translateY(2px)}
+.cv-row{margin-top:20px}
+.contact .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}

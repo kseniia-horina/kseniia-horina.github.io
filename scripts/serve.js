@@ -8,7 +8,7 @@ const port = Number(process.env.PORT) || 4173;
 const TYPES = {
   '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8',
   '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2',
-  '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8',
+  '.xml': 'application/xml', '.txt': 'text/plain; charset=utf-8', '.pdf': 'application/pdf',
 };
 const BLOCKED = ['node_modules', '.git', 'tests', 'scripts', 'test-results', 'playwright-report'];
 
