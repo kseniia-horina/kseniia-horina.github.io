@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kseniia Horina — QA Engineer</title>
+<meta name="description" content="QA Engineer. Ponad 3 lata, 12 produktów, 6 branż. Opieka zdrowotna, dostępność, telekomunikacja, podróże, sport i edukacja. Web, iOS, Android, API i integracje z urządzeniami.">
+<meta name="author" content="Kseniia Horina">
+<link rel="canonical" href="https://kseniia-horina.github.io/pl/">
+<link rel="alternate" hreflang="en" href="https://kseniia-horina.github.io/">
+<link rel="alternate" hreflang="pl" href="https://kseniia-horina.github.io/pl/">
+<link rel="alternate" hreflang="x-default" href="https://kseniia-horina.github.io/">
+<meta name="theme-color" content="#F4F3EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1014" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Kseniia Horina">
+<meta property="og:title" content="Kseniia Horina — QA Engineer">
+<meta property="og:description" content="Trzy lata w sześciu branżach, najczęściej jako jedyna osoba od QA w zespole. Opieka zdrowotna, dostępność i integracje sprzętowe.">
+<meta property="og:url" content="https://kseniia-horina.github.io/pl/">
+<meta property="og:image" content="https://kseniia-horina.github.io/assets/img/og-pl.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kseniia Horina, QA Engineer — 12 produktów, 6 branż, 9 jako jedyna osoba w QA">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Analityka bez ciasteczek: wpisz tu swój kod GoatCounter (np. "kseniia"), aby ją włączyć. Puste = wyłączone. -->
+<meta name="goatcounter" content="">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kseniia Horina",
+  "jobTitle": "QA Engineer",
+  "url": "https://kseniia-horina.github.io/pl/",
+  "image": "https://kseniia-horina.github.io/assets/img/og-pl.png",
+  "worksFor": { "@type": "Organization", "name": "i2a Solutions" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Wrocław", "addressCountry": "PL" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "National Aerospace University" },
+  "knowsLanguage": ["en", "pl", "uk", "ru"],
+  "knowsAbout": ["Zapewnianie jakości oprogramowania", "Testy aplikacji mobilnych", "Testy API", "Testy dostępności", "Oprogramowanie medyczne", "Testowanie wspierane przez AI"],
+  "sameAs": ["https://www.linkedin.com/in/kseniia-horina/"]
+}
+</script>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230E7C6B'/%3E%3Cstop offset='.5' stop-color='%236B3FC4'/%3E%3Cstop offset='1' stop-color='%23C42F63'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='13' fill='white' text-anchor='middle'%3EKH%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="../assets/fonts/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+  // Ustaw motyw przed renderowaniem, żeby uniknąć mignięcia
+  (function(){
+    var d = document.documentElement, t = null;
+    d.classList.remove('no-js');
+    try { t = localStorage.getItem('theme'); } catch(e){}
+    if(t !== 'dark' && t !== 'light') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    d.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3"/><path d="M7.5 15h9"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6M15 2v6M6 8h12v3a6 6 0 0 1-12 0zM12 17v5"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 6h7M18 8.5v7M6 8.5V14a4 4 0 0 0 4 4h5.5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5M22 9v6"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+</svg>
+
+<nav class="nav" id="nav" aria-label="Główna">
+  <div class="navbar">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">KH</span>Kseniia Horina</a>
+    <div class="navlinks" id="navlinks">
+      <a href="#experience">Doświadczenie</a>
+      <a href="#coverage">Pokrycie</a>
+      <a href="#ownership">Jak pracuję</a>
+      <a href="#domains">Branże</a>
+      <a href="#toolkit">Narzędzia</a>
+      <a href="#background">Wykształcenie</a>
+      <a href="#contact" class="nav-contact">Kontakt</a>
+    </div>
+    <div class="nav-actions">
+      <a class="lang-switch" href="../" hreflang="en" lang="en" data-lang-switch aria-label="EN — English version">EN</a>
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Przełącz tryb ciemny">
+        <svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn sm" href="#contact">Kontakt <svg><use href="#i-arrow"/></svg></a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navlinks">
+        <svg><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid-lines"></div>
+    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="status"><span class="pulse" aria-hidden="true"></span>Otwarta na pracę zdalną, hybrydową lub stacjonarną</span>
+        <h1 class="name"><span class="line"><span>Kseniia</span></span><span class="line"><span>Horina</span></span></h1>
+        <p class="role"><span class="typed" id="typed" aria-hidden="true" data-roles='["QA Engineer","Jedyna osoba w QA, od A do Z","Medycyna i dostępność","Web · iOS · Android · API"]'>QA Engineer</span><span class="caret" aria-hidden="true"></span><span class="sr-only">QA Engineer</span></p>
+        <p class="pitch">Trzy lata dostarczania oprogramowania w sześciu branżach — <b>najczęściej z pełną odpowiedzialnością za testy</b>.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#coverage">Zobacz, co testowałam <svg><use href="#i-arrow"/></svg></a>
+          <a class="btn ghost" href="#contact">Skontaktuj się</a>
+        </div>
+        <div class="meta">
+          <span><svg><use href="#i-briefcase"/></svg>QA Engineer w i2a Solutions · od lutego 2023</span>
+          <span><svg><use href="#i-pin"/></svg>Wrocław, Polska</span>
+          <span><svg><use href="#i-globe"/></svg>Angielski C1 · Polski B2 · Ukraiński i rosyjski — ojczyste</span>
+        </div>
+      </div>
+
+      <div class="terminal reveal reveal-d2" role="region" aria-label="Podsumowanie kariery w formie przebiegu testów">
+        <div class="term-bar"><i></i><i></i><i></i><span>~/kseniia — qa</span>
+          <button class="term-replay" id="replay" type="button" aria-label="Rerun — uruchom animację ponownie">↻ rerun</button>
+        </div>
+        <div class="term-body" id="term">
+          <div class="ln"><span class="p">$</span> npx run career.spec <span class="dim">--since 2023-02</span></div>
+          <div class="ln dim">&nbsp;</div>
+          <div class="ln dim">i2a Solutions · QA Engineer · od 02.2023</div>
+          <div class="ln"><span class="ok">✓</span> 12 produktów w 6 branżach</div>
+          <div class="ln"><span class="ok">✓</span> 9 z nich jako jedyna osoba w QA</div>
+          <div class="ln"><span class="ok">✓</span> do 5 produktów równolegle</div>
+          <div class="ln"><span class="ok">✓</span> web · iOS · Android · API · urządzenia</div>
+          <div class="ln"><span class="ok">✓</span> ~50% mniej czasu na regresję dzięki AI</div>
+          <div class="ln"><span class="ok">✓</span> 2 inżynierów QA pod moim mentoringiem</div>
+          <div class="ln sum"><span class="pass">PASS</span> <span class="dim">7 passed, 0 failed ·</span> gotowa na kolejny</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="glance">
+      <div class="g spot reveal" style="--c:var(--health)">
+        <p class="gt">Doświadczenie w skrócie</p>
+        <p class="gd"><b>12 produktów</b> przetestowanych w i2a Solutions od lutego 2023, <b>9 z nich jako jedyna osoba w QA</b>, w szczycie <b>do 5 równolegle</b>.</p>
+      </div>
+      <div class="g spot reveal reveal-d1" style="--c:var(--access)">
+        <p class="gt">Gdzie wchodzę głęboko</p>
+        <p class="gd">Aplikacje medyczne i zdrowotne, dostępność oraz wszystko, co ma <b>podłączony sprzęt</b> — urządzenia ubieralne, słuchawki, routery, beacony AR.</p>
+      </div>
+      <div class="g spot reveal reveal-d2" style="--c:var(--travel)">
+        <p class="gt">Jak pracuję</p>
+        <p class="gd">Traktuję <b>AI jako narzędzie pracy</b>, a nie modne hasło: zabrało mi mniej więcej połowę czasu regresji i smoke testów, a ten czas poszedł na przypadki brzegowe.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ DOŚWIADCZENIE ============ -->
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Doświadczenie</p>
+      <h2>Dwie role w QA, prowadzone równolegle</h2>
+    </div>
+    <div class="roles">
+      <article class="role-card spot reveal" style="--c:var(--health)">
+        <div class="role-top">
+          <span class="role-dates">Luty 2023 – obecnie <span class="dur" data-start="2023-02"></span></span>
+          <span class="now">Obecnie</span>
+        </div>
+        <h3>QA Engineer</h3>
+        <p class="org">i2a Solutions</p>
+        <p class="role-desc">Dwanaście produktów w sześciu branżach — opieka zdrowotna, dostępność, telekomunikacja, sport, podróże, prawo i edukacja. Jedyna osoba w QA przy dziewięciu z nich, w szczycie do pięciu równolegle, na webie, iOS, Androidzie, API i podłączonych urządzeniach.</p>
+        <a class="role-link" href="#coverage">Zobacz macierz pokrycia <svg><use href="#i-arrow"/></svg></a>
+      </article>
+      <article class="role-card spot reveal reveal-d1" style="--c:var(--access)">
+        <div class="role-top">
+          <span class="role-dates">Listopad 2023 – obecnie <span class="dur" data-start="2023-11"></span></span>
+          <span class="now">Obecnie</span>
+        </div>
+        <h3>Ekspertka ds. zapewniania jakości szkolnictwa wyższego</h3>
+        <p class="org">Narodowa Agencja ds. Zapewniania Jakości Szkolnictwa Wyższego (NAQA), Ukraina</p>
+        <p class="role-desc">Oceny akredytacyjne programów z informatyki i inżynierii komputerowej względem standardów krajowych, z raportami komisji eksperckiej publikowanymi przez NAQA.</p>
+        <a class="role-link" href="#naqa">Czytaj więcej <svg><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POKRYCIE ============ -->
+<section id="coverage">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Macierz pokrycia</p>
+      <h2>Co testowałam i na jakich platformach</h2>
+      <p class="lede">Dwanaście produktów w i2a Solutions od lutego 2023. Kolor oznacza branżę; pełna kropka oznacza, że byłam jedyną osobą w QA. Filtruj według tego, kogo szukasz, i otwórz dowolny produkt, aby zobaczyć szczegóły.</p>
+    </div>
+
+    <div class="toolbar reveal">
+      <div class="filters" role="group" aria-label="Filtruj produkty" id="filters">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true" data-label="wszystkie produkty">Wszystkie</button>
+        <button class="chip" type="button" data-filter="health" style="--c:var(--health)" aria-pressed="false" data-label="produkty medyczne">Medycyna</button>
+        <button class="chip" type="button" data-filter="access" style="--c:var(--access)" aria-pressed="false" data-label="dostępność">Dostępność</button>
+        <button class="chip" type="button" data-filter="telecom" style="--c:var(--telecom)" aria-pressed="false" data-label="telekomunikacja">Telekomunikacja</button>
+        <button class="chip" type="button" data-filter="other" style="--c:var(--travel)" aria-pressed="false" data-label="podróże, sport, prawo i edukacja">Podróże · Sport · Prawo · Edukacja</button>
+        <button class="chip" type="button" data-filter="devices" aria-pressed="false" data-label="produkty z integracją urządzeń lub IoT">Urządzenia i IoT</button>
+        <button class="chip" type="button" data-filter="sole" aria-pressed="false" data-label="produkty, w których byłam jedyną osobą w QA">Jedyna w QA</button>
+      </div>
+      <div class="legend">
+        <span class="key"><span class="dot"></span> Jedyna osoba w QA</span>
+        <span class="key"><span class="dot team"></span> W większym zespole QA</span>
+      </div>
+    </div>
+    <p class="count" id="count" aria-live="polite">Wszystkie produkty: 12</p>
+
+    <div class="matrix-card reveal" id="matrix">
+      <table class="matrix">
+        <caption class="sr-only">Przetestowane produkty według platformy. Pełna kropka: jedyna osoba w QA. Pierścień: w większym zespole QA.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Produkt</th>
+            <th scope="col" class="plat">Web</th><th scope="col" class="plat">iOS</th><th scope="col" class="plat">Android</th><th scope="col" class="plat">API</th><th scope="col" class="plat">Urządzenia</th>
+            <th scope="col" class="go"><span class="sr-only">Szczegóły</span></th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          <tr data-domain="health" data-label="Medycyna" style="--c:var(--health)" data-tools="Jenkins, Azure DevOps"
+              data-about="Platforma do zarządzania gabinetem stomatologicznym Carestream Dental. Testy funkcjonalne i API, narzędzia wspierane przez AI, prowadzenie dem, onboarding.">
+            <th scope="row" class="prod"><span class="nm">Sensei Cloud</span><span class="pill">w toku</span><span class="client">Carestream Dental · platforma dla gabinetów stomatologicznych</span></th>
+            <td class="cell" data-plat="Web"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="iOS"></td><td class="cell" data-plat="Android"></td>
+            <td class="cell" data-plat="API"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Sensei Cloud"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="health" data-devices="1" data-sole="1" data-label="Medycyna" style="--c:var(--health)" data-tools="TestFlight, Firebase, inSyncHub"
+              data-about="Śledzenie objawów, aktywności i wsparcia dla pacjentów onkologicznych, z integracją urządzeń ubieralnych.">
+            <th scope="row" class="prod"><span class="nm">Athelo Health</span><span class="client">wsparcie pacjentów onkologicznych</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Urządzenia"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Athelo Health"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="access" data-devices="1" data-sole="1" data-label="Dostępność" style="--c:var(--access)"
+              data-about="Rejestruje dźwięki otoczenia i odtwarza je wzmocnione w słuchawkach. Testowane pod kątem jakości nagrywania i odtwarzania, opóźnień, parowania słuchawek Bluetooth i odzyskiwania połączenia oraz zachowania w różnych stanach aplikacji.">
+            <th scope="row" class="prod"><span class="nm">Nadi</span><span class="pill">dostępność</span><span class="client">aplikacja audio dla osób z niedosłuchem</span></th>
+            <td class="cell" data-plat="Web"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"></td>
+            <td class="cell" data-plat="Urządzenia"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Nadi"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="health" data-sole="1" data-label="Medycyna" style="--c:var(--health)"
+              data-about="Aplikacja wspierająca rzucanie palenia dla klienta klinicznego.">
+            <th scope="row" class="prod"><span class="nm">QuitBuddy</span><span class="client">Meherry Medical School · rzucanie palenia</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: QuitBuddy"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="health" data-sole="1" data-label="Medycyna" style="--c:var(--health)"
+              data-about="Wyniki zgłaszane przez pacjentów, aktywność fizyczna i ćwiczenia oddechowe z przewodnikiem.">
+            <th scope="row" class="prod"><span class="nm">Cardea Survey</span><span class="client">XCelable · wyniki zgłaszane przez pacjentów, aktywność i ćwiczenia oddechowe</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Cardea Survey"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="health" data-sole="1" data-label="Medycyna" style="--c:var(--health)"
+              data-about="Poradnik zdrowia publicznego dla klienta z sektora NGO.">
+            <th scope="row" class="prod"><span class="nm">Kenya Family Planning</span><span class="client">wieloplatformowa aplikacja z poradami zdrowia publicznego</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"></td><td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Kenya Family Planning"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="telecom" data-devices="1" data-label="Telekomunikacja" style="--c:var(--telecom)" data-tools="Jira, Confluence"
+              data-about="Usługi telekomunikacyjne dla sektora rządowego i prywatnego, w tym TelcoBill, GovTelco i Agent Portal. Konfiguracja routerów i łączność weryfikowane end to end z platformą. Przekazane nowej osobie testującej w czerwcu 2026.">
+            <th scope="row" class="prod"><span class="nm">TelCloud</span><span class="client">Tantamount Software · telekomunikacja rządowa i prywatna, m.in. TelcoBill, GovTelco, Agent Portal</span></th>
+            <td class="cell" data-plat="Web"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="iOS"></td><td class="cell" data-plat="Android"></td>
+            <td class="cell" data-plat="API"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="Urządzenia"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: TelCloud"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="other" data-devices="1" data-label="Sport" style="--c:var(--sports)" data-tools="Jira"
+              data-about="Platforma Everi Holdings do angażowania kibiców na obiektach sportowych.">
+            <th scope="row" class="prod"><span class="nm">Venuetize PSN</span><span class="client">Everi Holdings · zaangażowanie kibiców</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="Android"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="cell" data-plat="API"></td>
+            <td class="cell" data-plat="Urządzenia"><i class="mark team"></i><span class="sr-only">w zespole</span></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Venuetize PSN"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="other" data-devices="1" data-sole="1" data-label="Edukacja i kultura" style="--c:var(--edu)"
+              data-about="Aplikacje muzealne i wirtualnych muzeów z rozszerzoną rzeczywistością uruchamianą zbliżeniowo, testowane na różnych kombinacjach urządzeń i systemów.">
+            <th scope="row" class="prod"><span class="nm">Guru Experience apps</span><span class="client">aplikacje muzealne i wirtualne muzea, AR uruchamiane beaconami</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"></td>
+            <td class="cell" data-plat="Urządzenia"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Guru Experience apps"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="other" data-sole="1" data-label="Podróże" style="--c:var(--travel)"
+              data-about="Platforma podróżnicza z aplikacjami white-label.">
+            <th scope="row" class="prod"><span class="nm">TripBucket</span><span class="pill">w toku</span><span class="client">platforma podróżnicza + aplikacje white-label</span></th>
+            <td class="cell" data-plat="Web"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: TripBucket"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="other" data-sole="1" data-label="Podróże" style="--c:var(--travel)"
+              data-about="Miejska aplikacja podróżnicza white-label.">
+            <th scope="row" class="prod"><span class="nm">El Paso</span><span class="client">El Paso Inc · miejska aplikacja podróżnicza white-label</span></th>
+            <td class="cell" data-plat="Web"></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: El Paso"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+          <tr data-domain="other" data-sole="1" data-label="Prawo" style="--c:var(--legal)"
+              data-about="Platforma usług prawnych.">
+            <th scope="row" class="prod"><span class="nm">Beyond Law</span><span class="client">platforma usług prawnych</span></th>
+            <td class="cell" data-plat="Web"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="iOS"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="Android"><i class="mark"></i><span class="sr-only">jedyna w QA</span></td>
+            <td class="cell" data-plat="API"></td><td class="cell" data-plat="Urządzenia"></td>
+            <td class="go"><button class="row-btn" type="button" aria-label="Szczegóły: Beyond Law"><svg class="go-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tally" id="tally">
+      <div class="stat spot reveal" style="--c:var(--health)"><div class="n" data-count="12">12</div><div class="l">produktów, plus podprodukty i aplikacje white-label</div><span class="bar"></span></div>
+      <div class="stat spot reveal reveal-d1" style="--c:var(--telecom)"><div class="n" data-count="6">6</div><div class="l">branż</div><span class="bar"></span></div>
+      <div class="stat spot reveal reveal-d2" style="--c:var(--access);--v:.75"><div class="n" data-count="9" data-suffix=" / 12">9 / 12</div><div class="l">jako jedyna osoba w QA</div><span class="bar"></span></div>
+      <div class="stat spot reveal reveal-d3" style="--c:var(--sports)"><div class="n" data-count="5">5</div><div class="l">produktów walidowanych równolegle w szczycie</div><span class="bar"></span></div>
+      <div class="stat spot reveal reveal-d3" style="--c:var(--travel);--v:.5"><div class="n" data-count="50" data-prefix="~" data-suffix="%">~50%</div><div class="l">mniej czasu na regresję i smoke testy dzięki AI</div><span class="bar"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JAK PRACUJĘ ============ -->
+<section id="ownership" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Jak pracuję</p>
+      <h2>Jakość przed pierwszą linijką kodu, a nie po ostatniej</h2>
+    </div>
+    <div class="process" id="process">
+      <div class="process-line" aria-hidden="true"><i></i></div>
+      <div class="step reveal" style="--c:var(--health)">
+        <div class="step-num">01</div>
+        <div class="step-card">
+          <h3>Przed developmentem</h3>
+          <p>Przeglądam user stories z product ownerami przed startem sprintu — sprawdzam, czy wymagania są kompletne, testowalne i faktycznie odpowiadają temu, o co prosił klient. Większość defektów, którym zapobiegam, nigdy nie trafia do zgłoszeń, bo nigdy nie powstają.</p>
+        </div>
+      </div>
+      <div class="step reveal reveal-d1" style="--c:var(--telecom)">
+        <div class="step-num">02</div>
+        <div class="step-card">
+          <h3>W trakcie developmentu</h3>
+          <p>Strategia testów, planowanie oraz <b>setki planów i przypadków testowych</b>. Uczestniczę w code review i akceptacji PR, zamiast czekać na końcu procesu, a krytyczne błędy śledzę aż do <b>przyczyny źródłowej</b>, zamiast zgłaszać tylko objaw.</p>
+        </div>
+      </div>
+      <div class="step reveal reveal-d2" style="--c:var(--access)">
+        <div class="step-num">03</div>
+        <div class="step-card">
+          <h3>Przy wydaniu</h3>
+          <p>Walidacja wydań i ich zatwierdzanie, <b>do pięciu produktów naraz</b> — dzięki przesuniętym cyklom i priorytetyzacji według ryzyka. Rutynową regresję i smoke testy przejmują <b>Claude, ChatGPT i mabl</b>; zaoszczędzony czas idzie na przypadki brzegowe i nowe funkcje.</p>
+        </div>
+      </div>
+      <div class="step reveal reveal-d3" style="--c:var(--travel)">
+        <div class="step-num">04</div>
+        <div class="step-card">
+          <h3>W zespole</h3>
+          <p>Wdrożyłam i mentorowałam <b>dwóch inżynierów QA</b> (web i mobile), prowadziłam dema produktów dla interesariuszy, opracowałam standardy dokumentacji wykorzystywane w kolejnych projektach i <b>przekazałam TelCloud nowej osobie testującej</b>, gdy przeszłam do innych zadań.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRANŻE ============ -->
+<section id="domains">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Gdzie mam największe doświadczenie</p>
+      <h2>Sześć branż, z czego trzy najważniejsze</h2>
+    </div>
+
+    <div class="tabs reveal">
+      <div class="tablist" role="tablist" aria-label="Branże">
+        <button class="tab" type="button" role="tab" id="tab-health" aria-controls="panel-health" aria-selected="true" style="--c:var(--health)">
+          <span class="tn">Medycyna i stomatologia</span><span class="tt">Najgłębsza domena · 5 produktów</span>
+        </button>
+        <button class="tab" type="button" role="tab" id="tab-access" aria-controls="panel-access" aria-selected="false" tabindex="-1" style="--c:var(--access)">
+          <span class="tn">Dostępność</span><span class="tt">Rzadka specjalizacja</span>
+        </button>
+        <button class="tab" type="button" role="tab" id="tab-devices" aria-controls="panel-devices" aria-selected="false" tabindex="-1" style="--c:var(--telecom)">
+          <span class="tn">Integracje z urządzeniami i IoT</span><span class="tt">W 5 produktach</span>
+        </button>
+        <button class="tab" type="button" role="tab" id="tab-breadth" aria-controls="panel-breadth" aria-selected="false" tabindex="-1" style="--c:var(--sports)">
+          <span class="tn">Telekomunikacja, sport, podróże, prawo i edukacja</span><span class="tt">Szerokość</span>
+        </button>
+      </div>
+
+      <div>
+        <div class="panel" role="tabpanel" id="panel-health" aria-labelledby="tab-health" tabindex="0" style="--c:var(--health)">
+          <span class="tag">Najgłębsza domena · 5 produktów</span>
+          <h3>Medycyna i stomatologia</h3>
+          <ul>
+            <li><strong>Sensei Cloud</strong> <span>— platforma Carestream Dental do zarządzania gabinetem. Testy funkcjonalne i API, narzędzia wspierane przez AI, prowadzenie dem, onboarding.</span></li>
+            <li><strong>Athelo Health</strong> <span>— śledzenie objawów, aktywności i wsparcia dla pacjentów onkologicznych, z integracją urządzeń ubieralnych.</span></li>
+            <li><strong>Cardea Survey (XCelable)</strong> <span>— wyniki zgłaszane przez pacjentów, aktywność fizyczna i ćwiczenia oddechowe z przewodnikiem.</span></li>
+            <li><strong>QuitBuddy, Kenya Family Planning</strong> <span>— rzucanie palenia i poradnik zdrowia publicznego dla klientów klinicznych i NGO.</span></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-access" aria-labelledby="tab-access" tabindex="0" hidden style="--c:var(--access)">
+          <span class="tag">Rzadka specjalizacja</span>
+          <h3>Dostępność</h3>
+          <ul>
+            <li><strong>Nadi</strong> <span>— aplikacja audio dla osób z niedosłuchem: rejestruje dźwięki otoczenia i odtwarza je wzmocnione w słuchawkach, na iOS, Androidzie i webie.</span></li>
+            <li><strong>Testy dla osób, które nie obejdą defektu</strong> <span>— jakość nagrywania i odtwarzania dźwięku, opóźnienia, parowanie słuchawek Bluetooth i odzyskiwanie po zerwaniu połączenia, zachowanie w różnych stanach aplikacji.</span></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-devices" aria-labelledby="tab-devices" tabindex="0" hidden style="--c:var(--telecom)">
+          <span class="tag">W 5 produktach</span>
+          <h3>Integracje z urządzeniami i IoT</h3>
+          <ul>
+            <li><strong>Urządzenia ubieralne i audio</strong> <span>— parowanie smartwatchy i słuchawek, synchronizacja w tle, integralność danych przy zrywanym połączeniu.</span></li>
+            <li><strong>Sprzęt telekomunikacyjny</strong> <span>— konfiguracja routerów i łączność w TelCloud, weryfikowane end to end z platformą.</span></li>
+            <li><strong>Beacony AR</strong> <span>— rozszerzona rzeczywistość uruchamiana zbliżeniowo w przestrzeniach muzealnych, na różnych kombinacjach urządzeń i systemów.</span></li>
+            <li><strong>Emulatory, symulatory i prawdziwe urządzenia</strong> <span>— macierze kompatybilności dla różnych wersji Androida i iOS oraz formatów urządzeń.</span></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-breadth" aria-labelledby="tab-breadth" tabindex="0" hidden style="--c:var(--sports)">
+          <span class="tag">Szerokość</span>
+          <h3>Telekomunikacja, sport, podróże, prawo i edukacja</h3>
+          <ul>
+            <li><strong>TelCloud</strong> <span>— Tantamount Software, usługi telekomunikacyjne dla sektora rządowego i prywatnego, m.in. TelcoBill, GovTelco i Agent Portal. Przekazane nowej osobie testującej w czerwcu 2026.</span></li>
+            <li><strong>Venuetize PSN</strong> <span>— platforma Everi Holdings do angażowania kibiców na obiektach.</span></li>
+            <li><strong>TripBucket i El Paso</strong> <span>— platforma podróżnicza oraz dziesiątki miejskich aplikacji white-label.</span></li>
+            <li><strong>Guru Experience Co.</strong> <span>— aplikacje muzealne i wirtualnych muzeów.</span></li>
+            <li><strong>Beyond Law</strong> <span>— usługi prawne.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NARZĘDZIA ============ -->
+<section id="toolkit" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Narzędzia</p>
+      <h2>Po co sięgam</h2>
+    </div>
+    <div class="kit">
+      <div class="kit-card spot reveal" style="--c:var(--health)">
+        <div class="kit-head"><span class="kit-ico"><svg aria-hidden="true"><use href="#i-flask"/></svg></span><h3>Testowanie</h3></div>
+        <ul class="chips">
+          <li>Strategia testów, planowanie i projektowanie przypadków</li>
+          <li>Testy funkcjonalne, regresyjne, smoke, sanity</li>
+          <li>Testy eksploracyjne i przypadki brzegowe</li>
+          <li>Dostępność, UI/UX, kompatybilność</li>
+          <li>Analiza wymagań, macierze identyfikowalności</li>
+        </ul>
+      </div>
+      <div class="kit-card spot reveal reveal-d1" style="--c:var(--access)">
+        <div class="kit-head"><span class="kit-ico"><svg aria-hidden="true"><use href="#i-spark"/></svg></span><h3>QA wspierane przez AI</h3></div>
+        <ul class="chips">
+          <li>Claude i ChatGPT do generowania i utrzymania przypadków testowych</li>
+          <li>Triaż powtarzalnych scenariuszy i analiza logów</li>
+          <li>Zamiana zaoszczędzonego czasu na pokrycie przypadków brzegowych</li>
+          <li>mabl do powtarzalnych testów smoke i regresji</li>
+        </ul>
+      </div>
+      <div class="kit-card spot reveal" style="--c:var(--telecom)">
+        <div class="kit-head"><span class="kit-ico"><svg aria-hidden="true"><use href="#i-plug"/></svg></span><h3>API i platformy</h3></div>
+        <ul class="chips">
+          <li>Postman</li><li>Swagger</li><li>Django Admin</li>
+          <li>Browser DevTools</li><li>Android Studio</li>
+          <li>Emulatory, symulatory i prawdziwe urządzenia</li>
+          <li>Web, iOS, Android, wieloplatformowo</li>
+        </ul>
+      </div>
+      <div class="kit-card spot reveal reveal-d1" style="--c:var(--sports)">
+        <div class="kit-head"><span class="kit-ico"><svg aria-hidden="true"><use href="#i-flow"/></svg></span><h3>Proces i dostarczanie</h3></div>
+        <ul class="chips">
+          <li>Agile/Scrum, odpowiedzialność za cały SDLC</li>
+          <li>Zarządzanie defektami i zatwierdzanie wydań</li>
+          <li>Jira</li><li>Confluence</li><li>Azure DevOps</li><li>Jenkins</li>
+          <li>TestFlight</li><li>Firebase</li><li>inSyncHub</li><li>Git</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NAQA ============ -->
+<section id="naqa">
+  <div class="wrap">
+    <div class="naqa">
+      <div class="reveal">
+        <p class="eyebrow">Listopad 2023 – obecnie</p>
+        <h2>Zapewnianie jakości poza oprogramowaniem</h2>
+        <p class="lede">Ekspertka ds. zapewniania jakości szkolnictwa wyższego w ukraińskiej Narodowej Agencji (NAQA), działającej przy Ministerstwie Edukacji i Nauki Ukrainy. Audyt względem opublikowanego standardu, dokumentowanie ustaleń, które mają realne konsekwencje, i obrona ich na piśmie — ta sama dyscyplina, na której opiera się QA w regulowanych branżach.</p>
+        <div class="naqa-big"><span class="n" data-count="4">4</span><span class="l">poprowadzone oceny akredytacyjne</span></div>
+      </div>
+      <ul class="findings">
+        <li class="reveal"><svg aria-hidden="true"><use href="#i-shield"/></svg>Poprowadziłam <b>4 oceny akredytacyjne</b> programów z informatyki i inżynierii komputerowej względem standardów krajowych.</li>
+        <li class="reveal reveal-d1"><svg aria-hidden="true"><use href="#i-shield"/></svg>Wykryłam krytyczne niezgodności — luki w programach nauczania, naruszenia kadrowe, dyskryminację instytucjonalną — które bezpośrednio wpłynęły na oficjalne decyzje akredytacyjne.</li>
+        <li class="reveal reveal-d2"><svg aria-hidden="true"><use href="#i-shield"/></svg>Jestem autorką raportów komisji eksperckiej opublikowanych przez <b>NAQA</b>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WYKSZTAŁCENIE ============ -->
+<section id="background" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Wykształcenie i certyfikaty</p>
+      <h2>Wykształcenie</h2>
+    </div>
+    <div class="stack">
+      <div class="reveal">
+        <h3 class="col-title"><svg aria-hidden="true"><use href="#i-cap"/></svg>Edukacja</h3>
+        <div class="timeline">
+          <div class="entry">
+            <span class="d">2021–2025</span>
+            <p class="t">Licencjat, Technologie komputerowe w medycynie i biologii <span class="honours">Z wyróżnieniem</span></p>
+            <p class="s">National Aerospace University</p>
+          </div>
+          <div class="entry">
+            <span class="d">2024</span>
+            <p class="t">Wymiana Erasmus+, informatyka</p>
+            <p class="s">Zachodniopomorski Uniwersytet Technologiczny w Szczecinie</p>
+          </div>
+          <div class="entry">
+            <span class="d">2023</span>
+            <p class="t">Wymiana NAWA, biotechnologia</p>
+            <p class="s">Politechnika Częstochowska</p>
+          </div>
+          <div class="entry">
+            <span class="d">2019–2021</span>
+            <p class="t">Junior bachelor, przetwarzanie danych</p>
+            <p class="s">Zaporoski Uniwersytet Narodowy</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-d1">
+        <h3 class="col-title"><svg aria-hidden="true"><use href="#i-award"/></svg>Certyfikaty</h3>
+        <div class="certs">
+          <div class="cert entry">
+            <div class="row"><p class="t">Business Analyst</p><span class="d">Dyplom</span></div>
+            <p class="s">Genius.Space — zbieranie wymagań, praca z interesariuszami i dokumentacja produktowa; podstawa do przeglądania user stories przed startem sprintu.</p>
+          </div>
+          <div class="cert entry">
+            <div class="row"><p class="t">Creation and Development of IT Products</p><span class="d">Sie 2024</span></div>
+            <p class="s">Genesis, we współpracy z Ministerstwem Edukacji i Nauki Ukrainy oraz Kyiv School of Economics.</p>
+          </div>
+          <div class="cert entry">
+            <div class="row"><p class="t">Automation Software Testing</p><span class="d">Sty 2024</span></div>
+            <p class="s">GlobalLogic i Prometheus — ukończony z wyróżnieniem.</p>
+          </div>
+          <div class="cert entry">
+            <div class="row"><p class="t">The Essential Kotlin Programming Course</p><span class="d">Wrz 2023</span></div>
+            <p class="s">Udemy — podstawy Androida, żeby czytać kod, który testuję.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ KONTAKT ============ -->
+<footer id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal">Kontakt</p>
+    <p class="cta reveal">Sześć branż za mną, a na <em>siódmą</em> zawsze jestem gotowa. Jeśli szukasz QA — porozmawiajmy.</p>
+
+    <div class="contacts">
+      <div class="contact-item reveal">
+        <a class="contact-card" href="mailto:kseniiahorina@gmail.com">
+          <span class="k">E-mail <svg aria-hidden="true"><use href="#i-ext"/></svg></span>
+          <span class="v">kseniiahorina@gmail.com</span>
+        </a>
+        <button class="copy" type="button" data-copy="kseniiahorina@gmail.com" aria-label="Kopiuj adres e-mail"><svg aria-hidden="true"><use href="#i-copy"/></svg></button>
+      </div>
+      <a class="contact-card reveal reveal-d1" href="https://www.linkedin.com/in/kseniia-horina/" target="_blank" rel="noopener">
+        <span class="k">LinkedIn <svg aria-hidden="true"><use href="#i-ext"/></svg></span>
+        <span class="v">Kseniia Horina</span>
+      </a>
+      <a class="contact-card reveal reveal-d2" href="https://t.me/s_killl_s" target="_blank" rel="noopener">
+        <span class="k">Telegram <svg aria-hidden="true"><use href="#i-ext"/></svg></span>
+        <span class="v">Kseniia Horina</span>
+      </a>
+    </div>
+
+    <div class="avail">
+      <span>Wrocław, Polska</span>
+      <span>Praca zdalna, hybrydowa lub stacjonarna</span>
+      <span>Angielski C1 · Polski B2 · Ukraiński i rosyjski — ojczyste</span>
+    </div>
+
+    <a class="tested reveal" href="https://github.com/kseniia-horina/kseniia-horina.github.io/actions/workflows/tests.yml" target="_blank" rel="noopener">
+      <span class="tested-ico"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+      <span class="tested-txt"><b>Ta strona jest przetestowana.</b> Każdy push uruchamia zestaw testów end-to-end — filtry, nawigacja, obie wersje językowe, widok mobilny i automatyczny audyt dostępności — w Playwright i axe.</span>
+      <img class="tested-badge" src="https://github.com/kseniia-horina/kseniia-horina.github.io/actions/workflows/tests.yml/badge.svg" alt="Aktualny status testów" width="110" height="20" loading="lazy">
+    </a>
+
+    <p class="fine"><span>© 2026 Kseniia Horina. Wszelkie prawa zastrzeżone.</span><a href="#top">Wróć na górę ↑</a></p>
+  </div>
+</footer>
+
+<!-- panel szczegółów produktu -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true" inert>
+  <div class="drawer-head">
+    <div>
+      <p class="eyebrow" id="drawerDomain"></p>
+      <h3 id="drawerTitle"></h3>
+    </div>
+    <button class="icon-btn" id="drawerClose" type="button" aria-label="Zamknij szczegóły"><svg aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-nav">
+    <button class="btn ghost sm" id="drawerPrev" type="button">← Poprzedni</button>
+    <button class="btn ghost sm" id="drawerNext" type="button">Następny →</button>
+  </div>
+</aside>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><svg aria-hidden="true"><use href="#i-check"/></svg><span id="toastMsg"></span></div>
+<button class="icon-btn to-top" id="toTop" type="button" aria-label="Wróć na górę"><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

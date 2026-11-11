@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kseniia-horina.github.io/sitemap.xml

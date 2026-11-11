@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Kseniia Horina</title>
+<meta name="robots" content="noindex">
+<script>
+  (function(){
+    var d = document.documentElement, t = null;
+    try { t = localStorage.getItem('theme'); } catch(e){}
+    if(t !== 'dark' && t !== 'light') t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    d.setAttribute('data-theme', t);
+  })();
+</script>
+<link rel="stylesheet" href="/assets/css/fonts.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+  body{min-height:100vh;display:grid;place-items:center;padding:24px}
+  .nf{max-width:560px;width:100%}
+  .nf .terminal{transform:none}
+  .nf .term-body{min-height:0}
+  .nf .term-body .ln{opacity:1;transform:none;white-space:normal}
+  .fail{background:#FF5F57;color:#0A0B0E;padding:1px 7px;border-radius:4px;font-weight:500}
+  .x{color:#FF7A73}
+  .nf-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+</style>
+</head>
+<body>
+<main class="nf">
+  <div class="terminal" role="region" aria-label="Page not found">
+    <div class="term-bar"><i></i><i></i><i></i><span>~/kseniia — qa</span></div>
+    <div class="term-body">
+      <div class="ln"><span class="p">$</span> npx run page.spec <span class="dim" id="path"></span></div>
+      <div class="ln">&nbsp;</div>
+      <div class="ln"><span class="x">✕</span> expected page to exist</div>
+      <div class="ln dim">&nbsp;&nbsp;received: 404 Not Found</div>
+      <div class="ln dim">&nbsp;&nbsp;severity: minor · reproducible: always</div>
+      <div class="ln sum"><span class="fail">FAIL</span> <span class="dim">1 failed ·</span> bug logged, heading back home</div>
+    </div>
+  </div>
+  <h1 class="sr-only">Page not found</h1>
+  <div class="nf-links">
+    <a class="btn" href="/">Back to the portfolio</a>
+    <a class="btn ghost" href="/pl/" lang="pl">Wersja polska</a>
+  </div>
+</main>
+<script>document.getElementById('path').textContent = location.pathname;</script>
+</body>
+</html>

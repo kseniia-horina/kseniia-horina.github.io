@@ -1,0 +1,19 @@
+{
+  "name": "kseniia-horina-portfolio",
+  "private": true,
+  "description": "Portfolio site for Kseniia Horina, with its own end-to-end test suite",
+  "scripts": {
+    "serve": "node scripts/serve.js",
+    "test": "playwright test",
+    "test:report": "playwright show-report",
+    "fonts": "node scripts/copy-fonts.js",
+    "og": "node scripts/make-og.js"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@playwright/test": "^1.65.0"
+  }
+}
