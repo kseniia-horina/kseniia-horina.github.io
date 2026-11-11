@@ -67,6 +67,25 @@ for (const { code, path } of LANGS) {
       await expect(page.locator('#naqa .findings li').first()).toContainText(code === 'en' ? '5 accreditation evaluations' : '5 ocen akredytacyjnych');
     });
 
+    test('matches the current CV (Kseniia_Horina_QAE.pdf)', async ({ page }) => {
+      const body = page.locator('body');
+      const facts = code === 'en'
+        ? ['3.5+ years', 'QA Lead', '10 QA engineers', 'Meharry Medical College', 'MSc, Biomedical Engineering',
+           'Sep 2026 – Dec 2027', 'IEC 62304', 'EF SET', 'EU work rights in Poland', 'B2B', '~2,000', '30 / day']
+        : ['Ponad 3,5 roku', 'QA Lead', '10 inżynierów QA', 'Meharry Medical College', 'Magister, inżynieria biomedyczna',
+           'Wrz 2026 – gru 2027', 'IEC 62304', 'EF SET', 'Prawo do pracy w UE', 'B2B', '~2000', '30 / dzień'];
+      for (const f of facts) await expect(body, f).toContainText(f);
+      for (const stale of ['Meherry', 'Medical School', 'two QA engineers', 'dwóch inżynierów', 'Three years', 'Trzy lata']) {
+        await expect(body, stale).not.toContainText(stale);
+      }
+      await expect(page.locator('#impact .imp')).toHaveCount(5);
+    });
+
+    test('the terminal summary count matches its checks', async ({ page }) => {
+      const checks = await page.locator('#term .ok').count();
+      await expect(page.locator('#term .sum')).toContainText(`${checks} passed, 0 failed`);
+    });
+
     test('does not publish a phone number', async ({ page }) => {
       await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
       const html = await page.content();

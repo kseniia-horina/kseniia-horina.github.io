@@ -19,6 +19,8 @@ async function snapshot(page, path) {
       hasAbout: !!r.dataset.about,
     })),
     stats: [...document.querySelectorAll('[data-count]')].map(n => n.textContent),
+    impact: [...document.querySelectorAll('#impact .imp')].map(i => i.style.getPropertyValue('--c')),
+    terminalChecks: document.querySelectorAll('#term .ok').length,
     tabs: [...document.querySelectorAll('[role=tab]')].map(t => t.id),
     panelItems: [...document.querySelectorAll('[role=tabpanel]')].map(p => p.querySelectorAll('li').length),
     toolChips: [...document.querySelectorAll('.kit .chips')].map(c => c.children.length),
