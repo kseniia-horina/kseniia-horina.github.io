@@ -56,6 +56,17 @@ for (const { code, path } of LANGS) {
       await expect(page.locator('#naqa .eyebrow')).toHaveText(code === 'en' ? 'Nov 2023 – present' : 'Listopad 2023 – obecnie');
     });
 
+    test('states 5 NAQA accreditation evaluations across three fields', async ({ page }) => {
+      await expect(page.locator('#naqa .naqa-big .n')).toHaveAttribute('data-count', '5');
+      const fields = code === 'en'
+        ? ['Biomedical Engineering', 'Computer Science', 'Computer Engineering']
+        : ['inżynierii biomedycznej', 'informatyki', 'inżynierii komputerowej'];
+      for (const where of ['#naqa .findings li >> nth=0', '#experience .role-card >> nth=1']) {
+        for (const f of fields) await expect(page.locator(where)).toContainText(f);
+      }
+      await expect(page.locator('#naqa .findings li').first()).toContainText(code === 'en' ? '5 accreditation evaluations' : '5 ocen akredytacyjnych');
+    });
+
     test('does not publish a phone number', async ({ page }) => {
       await expect(page.locator('a[href^="tel:"]')).toHaveCount(0);
       const html = await page.content();
